@@ -22,20 +22,22 @@ build:
 requirements:
   build:
     - r-base
-    - r-ape
-    - r-assertthat >=0.1
     - r-httr
     - r-jsonlite
-    - r-rentrez
+    - r-assertthat >=0.1
     - r-rncl >=0.6.0
+    - r-ape
+    - r-rentrez
+    - r-xml
   run:
     - r-base
-    - r-ape
-    - r-assertthat >=0.1
     - r-httr
     - r-jsonlite
-    - r-rentrez
+    - r-assertthat >=0.1
     - r-rncl >=0.6.0
+    - r-ape
+    - r-rentrez
+    - r-xml
 
 test:
   commands:
