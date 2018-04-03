@@ -1,4 +1,4 @@
-{% set version = '3.0.3' %}
+{% set version = "3.0.4" %}
 
 package:
   name: r-rotl
@@ -9,7 +9,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/rotl_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/rotl/rotl_{{ version }}.tar.gz
-  sha256: 049a417ee10203339b3543fd97116b59de467344493f234d0d01c4b6ad7fd75d
+  sha256: 1de6766f3ae08b1234c632b9c9cd9e579d5d426dfa6a0a8c2da6ddfe502084fd
 
 build:
   number: 0
@@ -22,20 +22,22 @@ build:
 requirements:
   build:
     - r-base
-    - r-ape
-    - r-assertthat >=0.1
     - r-httr
     - r-jsonlite
-    - r-rentrez
+    - r-assertthat >=0.1
     - r-rncl >=0.6.0
+    - r-ape
+    - r-rentrez
+    - r-xml
   run:
     - r-base
-    - r-ape
-    - r-assertthat >=0.1
     - r-httr
     - r-jsonlite
-    - r-rentrez
+    - r-assertthat >=0.1
     - r-rncl >=0.6.0
+    - r-ape
+    - r-rentrez
+    - r-xml
 
 test:
   commands:
