@@ -1,4 +1,4 @@
-{% set version = "3.0.5" %}
+{% set version = "3.0.6" %}
 
 package:
   name: r-rotl
@@ -9,11 +9,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/rotl_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/rotl/rotl_{{ version }}.tar.gz
-  sha256: 86dc67e466c3b45c681c48ffa65df5530e4677b9d3ac59b1d9369d77724838a2
+  sha256: f2716828c45c2680af025ca827491e1e9067b893979d4952f8e12a8d20279ca5
 
 build:
   noarch: generic
-  number: 1000
+  number: 0
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/
