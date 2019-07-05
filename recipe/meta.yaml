@@ -1,4 +1,4 @@
-{% set version = '3.0.7' %}
+{% set version = '3.0.9' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rotl_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rotl/rotl_{{ version }}.tar.gz
-  sha256: c94d8f1a732878f1d5c724a534dc170962a523eb4b213c27497162d748deda95
+  sha256: cc7be46b82b4738f0ee2d844d6354d4acdfb5d6c442cc8a635d0a3059f526f82
 
 build:
   merge_build_host: True  # [win]
@@ -62,7 +62,7 @@ extra:
 
 # Package: rotl
 # Title: Interface to the 'Open Tree of Life' API
-# Version: 3.0.7
+# Version: 3.0.9
 # Authors@R: c( person("Francois", "Michonneau", role=c("aut", "cre"), email="francois.michonneau@gmail.com", comment = c("ORCID" = "0000-0002-9092-966X")), person("Joseph", "Brown", role="aut", comment = c("ORCID" = "0000-0002-3835-8062")), person("David", "Winter", role="aut", comment = c("ORCID" = "0000-0002-6165-0029")), person("Scott", "Chamberlain", role="rev", comment = c("ORCID" = "0000-0003-1444-9135")))
 # Description: An interface to the 'Open Tree of Life' API to retrieve phylogenetic trees, information about studies used to assemble the synthetic tree, and utilities to match taxonomic names to 'Open Tree identifiers'. The 'Open Tree of Life' aims at assembling a comprehensive phylogenetic tree for all named species.
 # URL: https://github.com/ropensci/rotl
@@ -79,8 +79,8 @@ extra:
 # X-schema.org-isPartOf: https://ropensci.org
 # X-schema.org-relatedLink: https://codemeta.github.io/codemetar
 # NeedsCompilation: no
-# Packaged: 2019-02-15 20:29:44 UTC; francois
+# Packaged: 2019-06-14 14:33:36 UTC; francois
 # Author: Francois Michonneau [aut, cre] (<https://orcid.org/0000-0002-9092-966X>), Joseph Brown [aut] (<https://orcid.org/0000-0002-3835-8062>), David Winter [aut] (<https://orcid.org/0000-0002-6165-0029>), Scott Chamberlain [rev] (<https://orcid.org/0000-0003-1444-9135>)
 # Maintainer: Francois Michonneau <francois.michonneau@gmail.com>
 # Repository: CRAN
-# Date/Publication: 2019-02-15 21:00:07 UTC
+# Date/Publication: 2019-06-14 15:50:05 UTC
