@@ -47,7 +47,7 @@ test:
 
 about:
   home: https://github.com/ropensci/rotl
-  license: BSD_2_clause
+  license: BSD-2-clause
   summary: An interface to the 'Open Tree of Life' API to retrieve phylogenetic trees, information about studies used to assemble the synthetic tree, and utilities to match taxonomic names to 'Open Tree identifiers'. The 'Open Tree of Life' aims at assembling a comprehensive phylogenetic tree for all named species.
   license_family: BSD
   license_file: LICENSE
