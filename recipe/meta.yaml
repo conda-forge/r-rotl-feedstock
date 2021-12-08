@@ -1,4 +1,4 @@
-{% set version = "3.0.11" %}
+{% set version = "3.0.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rotl_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rotl/rotl_{{ version }}.tar.gz
-  sha256: 339bf0b7527449eb495673e406b76a0831aa529fe05952c3448b455cd2c91c2c
+  sha256: 1688b3284139803a9b1339d7f34a5db94bb1f2f4fd4c395423f7164dbdb3d98e
 
 build:
   merge_build_host: true  # [win]
@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-ape
@@ -47,10 +48,12 @@ test:
 
 about:
   home: https://github.com/ropensci/rotl
-  license: BSD_2_clause
+  license: BSD-2-Clause
   summary: An interface to the 'Open Tree of Life' API to retrieve phylogenetic trees, information about studies used to assemble the synthetic tree, and utilities to match taxonomic names to 'Open Tree identifiers'. The 'Open Tree of Life' aims at assembling a comprehensive phylogenetic tree for all named species.
   license_family: BSD
-  license_file: LICENSE
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_2_clause
+    - LICENSE
 
 extra:
   recipe-maintainers:
