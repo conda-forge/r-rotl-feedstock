@@ -1,4 +1,4 @@
-{% set version = "3.0.12" %}
+{% set version = "3.0.14" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rotl_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rotl/rotl_{{ version }}.tar.gz
-  sha256: 1688b3284139803a9b1339d7f34a5db94bb1f2f4fd4c395423f7164dbdb3d98e
+  sha256: 982ae7012c0e6c56115d5355c6269c507965c3b0b7f251daf1ca49eb80ad5fcf
 
 build:
   merge_build_host: true  # [win]
