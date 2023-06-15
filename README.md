@@ -1,11 +1,11 @@
-About r-rotl
-============
+About r-rotl-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rotl-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropensci/rotl
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rotl-feedstock/blob/main/LICENSE.txt)
 
 Summary: An interface to the 'Open Tree of Life' API to retrieve phylogenetic trees, information about studies used to assemble the synthetic tree, and utilities to match taxonomic names to 'Open Tree identifiers'. The 'Open Tree of Life' aims at assembling a comprehensive phylogenetic tree for all named species.
 
