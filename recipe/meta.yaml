@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rotl_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rotl/rotl_{{ version }}.tar.gz
-  sha256: 12baeef897c835d20a4d84cf058a3d3d09b89202f7ec0325140cb7754ab5635c
+  sha256: 60d5737eeaf5d9cc4d5830ec73fa3335dc7926e148b1768ea4662722c589d581
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
